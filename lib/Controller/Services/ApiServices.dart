@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class Apiservices {
-  static Future fetch_data() async {
-    final baseUrl = Uri.parse('https://jsonplaceholder.typicode.com/photos');
+  static Future fetch_data() async  {
+    final baseUrl = Uri.parse('https://jsonplaceholder.typicode.com/posts');
     try {
       final response = await http.get(baseUrl);
       if (response.statusCode == 200) {
